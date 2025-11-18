@@ -7,7 +7,8 @@ const button = document.querySelector('#button-login');
 const myUsername = 'alex';
 const myPassword = '123';
 
-button.addEventListener('', (event) => {
+button.addEventListener('click', (event) => {
+  
   event.preventDefault();
   
   const usernameValue = username.value;
