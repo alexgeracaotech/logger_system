@@ -4,9 +4,6 @@ const password = document.querySelector('#password-login');
 const checkbox = document.querySelector('#checkbox-login');
 const button = document.querySelector('#button-login');
 
-const myUsername = 'alex';
-const myPassword = '123';
-
 button.addEventListener('click', (event) => {
   
   event.preventDefault();
@@ -18,8 +15,11 @@ button.addEventListener('click', (event) => {
     alert('Fill in all fields!');
     return;
   }
+
+  const usernameSession = sessionStorage.getItem('username');
+  const passwordSession = sessionStorage.getItem('password');
   
-  if (usernameValue !== myUsername || passwordValue !== myPassword) {
+  if (usernameValue !== usernameSession || passwordValue !== passwordSession) {
     alert('Incorrect username or password.');
     return;
   }

@@ -16,36 +16,40 @@
       rel="stylesheet"
       href="../styles/form.css"
     />
-    <title>Login - Logger System</title>
+    <title>Recovery - Logger System</title>
   </head>
   <body>
     <form>
-      <h1>login</h1>
+      <h1>recovery</h1>
       <div class="inputs">
         <input
-          id="username-login"
+          id="username-recovery"
           type="text"
           placeholder="username"
         />
         <input
-          id="password-login"
+          id="new-password-recovery"
           type="password"
-          placeholder="password"
+          placeholder="new password"
+        />
+        <input
+          id="confirm-new-password-recovery"
+          type="password"
+          placeholder="confirm new password"
         />
       </div>
       <div class="show">
         <input
-          id="checkbox-login"
+          id="checkbox-recovery"
           type="checkbox"
         />
-        <label for="checkbox-login">show password</label>
+        <label for="checkbox-recovery">show password</label>
       </div>
-      <button id="button-login">login</button>
+      <button id="button-recovery">recovery</button>
       <div class="recovery">
-        <small>forgot your password? recover it <a href="./recovery.html">here</a>.</small>
         <small>don't have an account? register <a href="./register.html">here</a>.</small>
       </div>
     </form>
-    <script src="../scripts/login.js"></script>
+    <script src="../scripts/recovery.js"></script>
   </body>
 </html>

@@ -9,9 +9,9 @@ button.addEventListener('click', (event) => {
 
   event.preventDefault();
 
-  const nameValue = name.value;
-  const usernameValue = username.value;
-  const passwordValue = password.value;
+    const nameValue = name.value;
+    const usernameValue = username.value;
+    const passwordValue = password.value;
 
   if (nameValue === '' || usernameValue === '' || passwordValue === '') {
     alert('Fill in all fields!');
